@@ -14,56 +14,83 @@ body, html {
     position: absolute;
 }
 /* main */
-.bg_color {    
-    background-color: #f06c64;
-    width: 100%;
-    height: 600px;
-}
-/* Phone */
-    /* header phone */
-.phone {
-    width: 215px;
-    height: 458px;
-    background-color: #f2f2f2;
-}
-    .outer_circle_cam {
-        width: 10px;
-        height: 10px;
-        background-color: #d8d8d8;
-        border-radius: 50%;
+.main {
+    position: relative;
+}   
+    /* bg color layout main */
+    .bg_color {    
+        background-color: #f06c64;
+        width: 100%;
+        height: 600px;
     }
-    .inner_circle_cam {
-        width: 5px;
-        height: 5px;
-        border-radius: 50%;
-        background-color: #eb5055;
+    /* Phone */
+        /* header phone */
+    .phone {
+        width: 215px;
+        height: 458px;
+        background-color: #f2f2f2;
     }
-    .speaker_phone {
-        width: 36px;
-        height: 5px;
-        background-color: #acacac;
-    }
-    /* te */
-    /* screen */
-    .screen_layout {
-        width: 188px;
-        height: 333px;
-        background-color: #dbdc7e;
-        border: 2px solid #c6c6c6;
-    }
-    /* home button */
-    .home_button_outer_circle {
-        width: 43px;
-        height: 43px;
-        border-radius: 50%;
-        background-color: #fafafa;
-    }
-    .home_button_inner_circle {
-        width: 17px;
-        height: 17px;
-        border: 2px solid #c2c2c2;
+        .outer_circle_cam {
+            width: 10px;
+            height: 10px;
+            background-color: #d8d8d8;
+            border-radius: 50%;
+        }
+        .inner_circle_cam {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: #eb5055;
+        }
+        .speaker_phone {
+            width: 36px;
+            height: 5px;
+            background-color: #acacac;
+        }    
+        /* screen */
+        .screen_layout {
+            width: 188px;
+            height: 333px;
+            background-color: #dbdc7e;
+            border: 2px solid #c6c6c6;
+        }
+        /* home button */
+        .home_button_outer_circle {
+            width: 43px;
+            height: 43px;
+            border-radius: 50%;
+            background-color: #fafafa;
+        }
+        .home_button_inner_circle {
+            width: 17px;
+            height: 17px;
+            border: 2px solid #c2c2c2;
+        }
+        /* bg line bottom */
+        .bg_line_bottom {
+            width: 100%;
+            height: 14px;
+            background-color: #ea676b;
+            position: absolute;
+        }
+    .g_phone {    
+        /* transform: rotate(90deg); */
     }
 
-.g_phone {    
-    /* transform: rotate(90deg); */
+/* footer */
+.footer {
+    width: 100%;
+    height: 496px;
+    background-color: #f2f2f2;
 }
+    /* services support */
+    .service_footer {
+        height: 100%;
+    }
+    /* bg_line_footer */
+    .bg_line_footer {
+        width: 100%;
+        background-color: #ffffff;
+        height: 6px;
+    }
+
