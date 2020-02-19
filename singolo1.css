@@ -101,6 +101,19 @@ h1,body {
             transform: translateX(-50%);
             position: absolute;
         }
+            .arrow {
+                border: solid black;
+                border-width: 0 5px 5px 0;
+                width: 15px;
+                height: 15px;
+                /* display: inline-block; */
+            }
+            .prev_button {
+                transform: rotate(135deg);
+            }
+            .next_button {
+                transform: rotate(-45deg);
+            }
              /* Phone */
                 /* header phone */
             .phone {
