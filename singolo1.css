@@ -56,8 +56,8 @@ h1,body {
         .li_nav {
             /* padding: 0 0; */
             /* display: inline-block; */
-            margin-left: -9px;
-            padding-left: 9px;
+            margin-left: -4px;
+            padding-left: 4px;
             font-family: 'Latok';
             font-size: 8.6pt;
             color: #494e62;
@@ -100,6 +100,8 @@ h1,body {
             left: 50%;
             transform: translateX(-50%);
             position: absolute;
+            display: flex;
+            justify-content: space-between;
         }
             .arrow {
                 border: solid black;
@@ -119,8 +121,37 @@ h1,body {
             .phone {
                 width: 215px;
                 height: 458px;
-                background-color: #f2f2f2;
+                /* background-color: #f2f2f2; */
+                position: relative;
+                /* z-index: 10; */
             }
+            .wrapper_phone {                
+                border-radius: 28px;
+                width: 215px;
+                height: 458px;
+                background-color: #f2f2f2;
+                position: relative;
+                z-index: 10;
+            }
+                .shadow {
+                    top: 0;                    
+                    position: absolute;
+                    z-index: 1;
+                }
+                .v_shadow {
+                    left: 0;
+                    width: 240px;
+                    height: 483px;
+                    background-image: url('./assets/images/v_phone_shadow.png');
+                }
+                .h_shadow {                    
+                    width: 483px;
+                    height: 240px;
+                    transform: rotate(90deg);
+                    top: 96px;
+                    left: -122px;
+                    background-image: url('./assets/images/h_phone_shadow.png');
+                }            
                 .outer_circle_cam {
                     width: 10px;
                     height: 10px;
@@ -164,8 +195,8 @@ h1,body {
                     background-color: #ea676b;
                     position: absolute;
                 }
-            .g_phone {    
-                /* transform: rotate(90deg); */
+            .h_phone {    
+                transform: rotate(90deg);
             }
 
 /* footer */
