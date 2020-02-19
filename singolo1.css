@@ -5,7 +5,7 @@
 
 
 body, html {
-    width: 1021px;
+    width: 1020px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -24,12 +24,13 @@ h1,body {
     .h1 {
         font-family: 'Latok';        
         font-size: 18.03448pt;
-        padding-top: 5px;
-        color: aqua;
+        padding-top: 2px;
+        color: #ffffff;
     }
     .header__wrapper {
         width: 940px;
         /* margin: 0 auto; */
+        padding-top: 5px;
         display: flex;
         justify-content: space-between;
         position: absolute;
@@ -45,86 +46,114 @@ h1,body {
         justify-content: space-between;        
         /* margin: 0 0; */
         padding: 0 0;
-    }
+    }   
+        .asterisk {
+            color: #f06c64;
+        }
+        .li_nav_none {
+            list-style-type: none;
+        }
         .li_nav {
             /* padding: 0 0; */
             /* display: inline-block; */
+            margin-left: -9px;
+            padding-left: 9px;
             font-family: 'Latok';
             font-size: 8.6pt;
-            color: aqua;
+            color: #494e62;
             /* width: 50px; */
         }
+        .navigation a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .navigation a:hover {
+            color: #f06c64;
+        }
+        
+        /* a,.navigation a:active, .navigation a:link,.navigation a:visited {
+            text-decoration: none;
+            color: ffffff;
+        } */
     /* header botto line */
     .header_bottom {
         background-color: #323746;
         width: 100%;
         height: 6px;
+        top: 100%;        
         position: absolute;
     }
 
 /* main */
 .main {
+    top:6px;
     position: relative;
-}   
-    /* bg color layout main */
+}    /* bg color layout main */
     .bg_color {    
         background-color: #f06c64;
         width: 100%;
         height: 600px;
     }
-    /* Phone */
-        /* header phone */
-    .phone {
-        width: 215px;
-        height: 458px;
-        background-color: #f2f2f2;
-    }
-        .outer_circle_cam {
-            width: 10px;
-            height: 10px;
-            background-color: #d8d8d8;
-            border-radius: 50%;
-        }
-        .inner_circle_cam {
-            width: 5px;
-            height: 5px;
-            border-radius: 50%;
-            background-color: #eb5055;
-        }
-        .speaker_phone {
-            width: 36px;
-            height: 5px;
-            background-color: #acacac;
-        }    
-        /* screen */
-        .screen_layout {
-            width: 188px;
-            height: 333px;
-            background-color: #dbdc7e;
-            border: 2px solid #c6c6c6;
-        }
-        /* home button */
-        .home_button_outer_circle {
-            width: 43px;
-            height: 43px;
-            border-radius: 50%;
-            background-color: #fafafa;
-        }
-        .home_button_inner_circle {
-            width: 17px;
-            height: 17px;
-            border: 2px solid #c2c2c2;
-        }
-        /* bg line bottom */
-        .bg_line_bottom {
-            width: 100%;
-            height: 14px;
-            background-color: #ea676b;
+        /* main wrapper */
+        .main_wrapper{
+            width: 940px;
+            left: 50%;
+            transform: translateX(-50%);
             position: absolute;
         }
-    .g_phone {    
-        /* transform: rotate(90deg); */
-    }
+             /* Phone */
+                /* header phone */
+            .phone {
+                width: 215px;
+                height: 458px;
+                background-color: #f2f2f2;
+            }
+                .outer_circle_cam {
+                    width: 10px;
+                    height: 10px;
+                    background-color: #d8d8d8;
+                    border-radius: 50%;
+                }
+                .inner_circle_cam {
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background-color: #eb5055;
+                }
+                .speaker_phone {
+                    width: 36px;
+                    height: 5px;
+                    background-color: #acacac;
+                }    
+                /* screen */
+                .screen_layout {
+                    width: 188px;
+                    height: 333px;
+                    background-color: #dbdc7e;
+                    border: 2px solid #c6c6c6;
+                }
+                /* home button */
+                .home_button_outer_circle {
+                    width: 43px;
+                    height: 43px;
+                    border-radius: 50%;
+                    background-color: #fafafa;
+                }
+                .home_button_inner_circle {
+                    width: 17px;
+                    height: 17px;
+                    border: 2px solid #c2c2c2;
+                }
+                /* bg line bottom */
+                .bg_line_bottom {
+                    width: 100%;
+                    height: 14px;
+                    background-color: #ea676b;
+                    position: absolute;
+                }
+            .g_phone {    
+                /* transform: rotate(90deg); */
+            }
 
 /* footer */
 .service {
