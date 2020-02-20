@@ -98,22 +98,30 @@ h1,body {
         .main_wrapper{
             width: 940px;
             left: 50%;
-            transform: translateX(-50%);
-            position: absolute;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            position: relative;
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
+
             .arrow {
                 border: solid black;
                 border-width: 0 5px 5px 0;
                 width: 15px;
                 height: 15px;
+                position: relative;
+                bottom: 5px;
+                border-radius: 2px;
                 /* display: inline-block; */
             }
             .prev_button {
+                left:4px;
                 transform: rotate(135deg);
             }
             .next_button {
+                right: 2px;;
                 transform: rotate(-45deg);
             }
              /* Phone */
@@ -124,6 +132,7 @@ h1,body {
                 /* background-color: #f2f2f2; */
                 position: relative;
                 /* z-index: 10; */
+                bottom: 19px;                
             }
             .wrapper_phone {                
                 border-radius: 28px;
@@ -194,10 +203,15 @@ h1,body {
                     height: 14px;
                     background-color: #ea676b;
                     position: absolute;
+                    top: 99%;
                 }
-            .h_phone {    
-                transform: rotate(90deg);
-            }
+                .h_phone {    
+                    transform: rotate(90deg);
+                    right: 42px;
+                }
+                .v_phone {
+                    right: 105px;
+                }
 
 /* footer */
 .service {
