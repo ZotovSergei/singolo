@@ -140,8 +140,14 @@ h1,body {
                 height: 458px;
                 background-color: #f2f2f2;
                 position: relative;
-                z-index: 10;
+                z-index: 10;                
             }
+                .v_wrapper_phone {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
                 .shadow {
                     top: 0;                    
                     position: absolute;
@@ -160,54 +166,98 @@ h1,body {
                     top: 96px;
                     left: -122px;
                     background-image: url('./assets/images/h_phone_shadow.png');
+                }
+                .head_phone {
+                    height: 25px;
+                    position: relative;
+                    display: flex;                    
                 }            
-                .outer_circle_cam {
-                    width: 10px;
-                    height: 10px;
-                    background-color: #d8d8d8;
-                    border-radius: 50%;
+                .v_head_phone {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    top: -10px;
                 }
-                .inner_circle_cam {
-                    width: 5px;
-                    height: 5px;
-                    border-radius: 50%;
-                    background-color: #eb5055;
+                .h_head_phone {
+
                 }
-                .speaker_phone {
-                    width: 36px;
-                    height: 5px;
-                    background-color: #acacac;
-                }    
+                    .outer_circle_cam {
+                        width: 10px;
+                        height: 10px;
+                        background-color: #d8d8d8;
+                        border-radius: 50%;
+                        position: relative;
+                    }
+                    .inner_circle_cam {
+                        position: absolute;
+                        left:50%;
+                        top:50%;
+                        transform: translate(-50%,-50%);
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background-color: #eb5055;
+                    }
+                    .speaker_phone {
+                        width: 36px;
+                        height: 5px;
+                        background-color: #acacac;
+                        border-radius: 3px;
+                    }    
                 /* screen */
                 .screen_layout {
                     width: 188px;
                     height: 333px;
                     background-color: black;
-
+                    
                     border: 2px solid #c6c6c6;
                 }
-                .h_screen_layout {
-                    background: url('./assets/images/h_screen_layout.png');
-                    transform: rotate(-90deg);
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
+                .v_screen {
+                    top: 12px;
+                    position: relative;
+                    left: 1px;
                 }
-                .v_screen_layout {
-
-                }
+                    .h_screen_layout {
+                        background: url('./assets/images/h_screen_layout.png') center no-repeat;
+                        transform: rotate(-90deg);
+                        width: 200%;
+                        height: 100%;
+                        position: absolute;
+                        top: -45px;
+                        left: -119px;
+                    }
+                    .v_screen_layout {
+                        background: url('./assets/images/v_screen_layout.png') center no-repeat;
+                        width: 100%;
+                        height: 100%;                    
+                    }                
                 /* home button */
-                .home_button_outer_circle {
-                    width: 43px;
-                    height: 43px;
-                    border-radius: 50%;
-                    background-color: #fafafa;
+                .home_button {
+                    position: relative;
+                    
                 }
-                .home_button_inner_circle {
-                    width: 17px;
-                    height: 17px;
-                    border: 2px solid #c2c2c2;
-                }
+                    .v_home_button {
+                        top: 20px;
+                    }
+                    /* .h_home_button {
+
+                    } */
+                    .home_button_outer_circle {
+                        width: 43px;
+                        height: 43px;
+                        border-radius: 50%;
+                        background-color: #fafafa;                        
+                    }
+                    .home_button_inner_circle {
+                        width: 15px;
+                        height: 15px;
+                        border: 2px solid #c2c2c2;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        border-radius: 6px;
+                    }
                 /* bg line bottom */
                 .bg_line_bottom {
                     width: 100%;
