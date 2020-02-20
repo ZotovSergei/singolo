@@ -107,7 +107,7 @@ h1,body {
         }
 
             .arrow {
-                border: solid black;
+                border: solid #ca4549;
                 border-width: 0 5px 5px 0;
                 width: 15px;
                 height: 15px;
@@ -182,8 +182,19 @@ h1,body {
                 .screen_layout {
                     width: 188px;
                     height: 333px;
-                    background-color: #dbdc7e;
+                    background-color: black;
+
                     border: 2px solid #c6c6c6;
+                }
+                .h_screen_layout {
+                    background: url('./assets/images/h_screen_layout.png');
+                    transform: rotate(-90deg);
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                }
+                .v_screen_layout {
+
                 }
                 /* home button */
                 .home_button_outer_circle {
