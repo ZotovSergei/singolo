@@ -141,13 +141,17 @@ h1,body {
                 background-color: #f2f2f2;
                 position: relative;
                 z-index: 10;                
+                display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
             }
-                .v_wrapper_phone {
+                /* .v_wrapper_phone {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                }
+                } */
                 .shadow {
                     top: 0;                    
                     position: absolute;
@@ -171,16 +175,11 @@ h1,body {
                     height: 25px;
                     position: relative;
                     display: flex;                    
-                }            
-                .v_head_phone {
                     flex-direction: column;
                     align-items: center;
                     justify-content: space-between;
                     top: -10px;
-                }
-                .h_head_phone {
-
-                }
+                }                            
                     .outer_circle_cam {
                         width: 10px;
                         height: 10px;
@@ -211,20 +210,28 @@ h1,body {
                     background-color: black;
                     
                     border: 2px solid #c6c6c6;
-                }
-                .v_screen {
+
                     top: 12px;
                     position: relative;
                     left: 1px;
                 }
+                /* .v_screen {
+                    top: 12px;
+                    position: relative;
+                    left: 1px;
+                }
+                .h_screen {
+                    position: relative;
+                } */
                     .h_screen_layout {
                         background: url('./assets/images/h_screen_layout.png') center no-repeat;
                         transform: rotate(-90deg);
-                        width: 200%;
+                        width: 337px;
                         height: 100%;
                         position: absolute;
-                        top: -45px;
-                        left: -119px;
+                        top: 0;
+                        left: -75px;
+
                     }
                     .v_screen_layout {
                         background: url('./assets/images/v_screen_layout.png') center no-repeat;
@@ -234,6 +241,7 @@ h1,body {
                 /* home button */
                 .home_button {
                     position: relative;
+                    top: 20px;
                     
                 }
                     .v_home_button {
