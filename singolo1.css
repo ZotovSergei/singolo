@@ -12,7 +12,7 @@
 }
 @font-face {
     font-family: Latok_regular;
-    src: url('./assets/fonts/Lato-Regular.ttf.ttf');
+    src: url('./assets/fonts/Lato-Regular.ttf');
 }
 body, html {
     width: 1020px;
@@ -298,7 +298,7 @@ h1,body {
     height: 496px;
     background-color: #f2f2f2;
     position: relative;
-    top: 13px;
+    top: 6px;
 }
     /* services support */
     .service_footer {
@@ -320,7 +320,7 @@ h1,body {
     }  
         .h2_service {
             font-family: 'Latok_black';
-            margin-top: 52px;
+            margin-top: 59px;
             font-size: 30px;
             margin-bottom: 21px;
         }
@@ -350,7 +350,7 @@ h1,body {
             padding: 0;
             margin: 0;
             top: 32px;
-            row-gap: 34px;
+            row-gap: 31px;
             column-gap: 20px;
         }
         /* .circle_img {
@@ -441,11 +441,12 @@ h1,body {
             margin-top: -2px;
         }
         .text_service {
-            font-family: 'Latok_regular';
-            font-size: 12px;
+            font-family: 'Latok_regular';            
             text-align: justify;
             width: 220px;
             height: 52px;
+            font-size: 12px;
+            line-height: 22px;
         }
         .service_description {
             margin-left: 20px;
@@ -456,4 +457,5 @@ h1,body {
             display: flex;
             line-height: 19px;
             overflow: hidden;
+            
         }
