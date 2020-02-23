@@ -222,6 +222,9 @@ h1,body {
                     .v_home_button {
                         top: 20px;
                     }
+                    .h_home_button {
+                        top:18px
+                    }
                     .home_button_outer_circle {
                         width: 43px;
                         height: 43px;
