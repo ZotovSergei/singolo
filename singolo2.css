@@ -21,13 +21,14 @@
 body, html {
     margin: 0;
     width: 1020px;
+    max-width: 1020px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
     .portfolio {
         width: 100%;
-        height: 870px;
+        height: 864px;
         background-color: #2d303a;       
     }
         .wrapper {
@@ -120,8 +121,20 @@ body, html {
             }
             
      .aboutUs {
+        width: 100%;
+        height: 870px;;
+     }
+        .h2_head_aboutUs {
+            margin-bottom: 19px;
+        }
+        .header_paragraph_aboutUs {            
+            font-size: 18px;
+            font-weight: 300;
+            font-family: 'Lato';
+            text-align: justify;
+            line-height: 28px;
+        }
 
-     }       
 .social {
     width: 32px;
     height: 32px;
