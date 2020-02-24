@@ -122,7 +122,7 @@ body, html {
             
      .aboutUs {
         width: 100%;
-        height: 870px;
+        height: 728px;
         background-color: #f2f2f2;
      }
             .aboutUs_header {
@@ -181,10 +181,47 @@ body, html {
                     width: 304px;
                     text-align: left;
                 }
-.social {
-    width: 32px;
-    height: 32px;
-    border-radius: 16px;
-    background-color: #eb5055;
-    border: 1px solid #666d89;
-}
+            .social {
+                display: inline-block;
+                padding: 0;
+                margin: 0;
+            }
+            .social_acc {
+                width: 32px;
+                height: 32px;
+                border-radius: 16px;
+                /* background-color: #eb5055; */
+                border: 1px solid #666d89;
+                display: inline-block;
+                box-sizing: border-box;
+                position: relative;
+                margin-top: 22px;
+                margin-right: 4px;
+            }
+
+            .social .social_acc div {
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 32px;
+                height: 32px;
+                box-sizing: border-box;
+            }
+            .facebook {
+                background: url('./assets/singolo2/image/social/f.png') no-repeat center;
+            }
+            .google {
+                background: url('./assets/singolo2/image/social/g.png') no-repeat center;
+            }
+            .twitter {
+                background: url('./assets/singolo2/image/social/t.png') no-repeat center;
+            }
+            .linkenIn {
+                background: url('./assets/singolo2/image/social/l.png') no-repeat center;
+            }
+    .bottom_line_aboutUs {
+        width: 100%;
+        height: 6px;
+        background-color: #f2f2f2;
+    }
