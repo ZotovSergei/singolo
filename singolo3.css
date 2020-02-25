@@ -1,0 +1,137 @@
+body, html {
+    margin: 0;
+    width: 1020px;
+    max-width: 1020px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.feedback {
+    width: 100%;
+    height: 648px;
+    position: relative;
+    background-color: #f06c64;
+}
+.wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 940px;
+}
+.feedback_header {
+    font-size: 30px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+}
+.feedback_paragraph {    
+    font-size: 18px;
+    line-height: 30px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+}
+.layout_2_column {
+    display: grid;
+    grid-template-columns: 66% 34%;
+    column-gap: 17px;
+}
+.feedback_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+input {
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    height: 38px;
+}
+.input_design {
+    border-radius: 5px;
+    background-color: #d6564f;
+    font-size: 12px;
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+
+.contact_feed_h4  {
+    font-size: 18px;
+    /* line-height: 18px; */
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+}
+.contact_feed_paragraph {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+.contacts {
+font-size: 12px;
+line-height: 22px;
+color: #f0d8d9;
+font-family: "Lato";
+font-weight: 400;
+text-align: left;
+}
+.social {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.social_acc {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;    
+    border: 1px solid #666d89;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 22px;
+    margin-right: 4px;
+}
+.bg-line-footer  {
+    background-color: #ea676b;
+    width: 100%;
+    height: 6px;
+}
+
+.social .social_acc div {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+}
+.facebook {
+    background: url('./assets/singolo2/image/social/f.png') no-repeat center;
+}
+.google {
+    background: url('./assets/singolo2/image/social/g.png') no-repeat center;
+}
+.twitter {
+    background: url('./assets/singolo2/image/social/t.png') no-repeat center;
+}
+.linkenIn {
+    background: url('./assets/singolo2/image/social/l.png') no-repeat center;
+}
+.footer {
+    width: 100%;
+    height: 76px;
+    background-color: #2d303a;
+    
+}
+.wrapper-footer {
+    display: flex;
+    justify-content: space-between;
+}
