@@ -19,20 +19,20 @@ body, html {
     width: 940px;
 }
 .f_header {
-    margin-top: 68px;
+    margin-top: 59px;
     margin-bottom: 43px ;
 }
 .feedback_header {
     font-size: 30px;
-    line-height: 18px;
+    /* line-height: 18px; */
     color: #f0d8d9;
     font-family: "Lato";
     font-weight: 900;
-    margin-bottom: 28px;
+    margin-bottom: 0;
 }
 .feedback_paragraph {    
     font-size: 18px;
-    line-height: 31px;
+    line-height: 30px;
     color: #f0d8d9;
     font-family: "Lato";
     font-weight: 300;
@@ -63,16 +63,19 @@ input {
     text-align: left;
     border: 0px;
 }
-
+.contact {
+    width: 300px;
+}
 .contact_feed_h4  {
     margin: 0;
-    /* margin-top: -1px;     */
+    margin-top: -1px;    
     font-size: 18px;
     /* line-height: 18px; */
     color: #f0d8d9;
     font-family: "Lato";
     font-weight: 900;
     text-align: left;
+    word-spacing: -1px;
 }
 .contact_feed_paragraph {
     font-size: 12px;
@@ -81,6 +84,10 @@ input {
     font-family: "Lato";
     font-weight: 400;
     text-align: justify;
+    margin-top: 8px;
+    /* overflow-wrap: break-word; */
+    word-spacing: -1px;
+    margin-bottom: 20px;
 }
 .contacts {
     font-size: 12px;
@@ -89,6 +96,16 @@ input {
     font-family: "Lato";
     font-weight: 400;
     text-align: left;
+}
+.contacts_wrapper {
+    padding-left: 18px;
+}
+.decor {
+    text-decoration: none;
+    color: #f0d8d9;
+}
+.li_coord {
+    padding-left: 5px;
 }
 .geo {
     list-style-image: url('./assets/singolo3/geo_form.png');
