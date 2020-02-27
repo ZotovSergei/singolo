@@ -18,25 +18,30 @@ body, html {
     transform: translateX(-50%);
     width: 940px;
 }
+.f_header {
+    margin-top: 68px;
+    margin-bottom: 43px ;
+}
 .feedback_header {
     font-size: 30px;
     line-height: 18px;
     color: #f0d8d9;
     font-family: "Lato";
     font-weight: 900;
+    margin-bottom: 28px;
 }
 .feedback_paragraph {    
     font-size: 18px;
-    line-height: 30px;
+    line-height: 31px;
     color: #f0d8d9;
     font-family: "Lato";
     font-weight: 300;
-    text-align: left;
+    text-align: justify;
 }
 .layout_2_column {
     display: grid;
     grid-template-columns: 66% 34%;
-    column-gap: 17px;
+    column-gap: 20px;
 }
 .feedback_form {
     display: flex;
@@ -56,9 +61,12 @@ input {
     font-family: "Lato";
     font-weight: 400;
     text-align: left;
+    border: 0px;
 }
 
 .contact_feed_h4  {
+    margin: 0;
+    /* margin-top: -1px;     */
     font-size: 18px;
     /* line-height: 18px; */
     color: #f0d8d9;
@@ -72,15 +80,24 @@ input {
     color: #f0d8d9;
     font-family: "Lato";
     font-weight: 400;
-    text-align: left;
+    text-align: justify;
 }
 .contacts {
-font-size: 12px;
-line-height: 22px;
-color: #f0d8d9;
-font-family: "Lato";
-font-weight: 400;
-text-align: left;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+.geo {
+    list-style-image: url('./assets/singolo3/geo_form.png');
+}
+.phone {
+    list-style-image: url('./assets/singolo3/phone_form.png');
+}
+.mail {
+    list-style-image: url('./assets/singolo3/mail_form.png');
 }
 .social {
     display: inline-block;
