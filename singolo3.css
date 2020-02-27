@@ -63,6 +63,19 @@ input {
     text-align: left;
     border: 0px;
 }
+.input_design::placeholder {    
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    padding-left: 15px;
+}
+.textarea_design {
+    padding-left: 0;
+    padding-top: 8px;
+}
 .contact {
     width: 300px;
 }
@@ -168,4 +181,15 @@ input {
 .wrapper-footer {
     display: flex;
     justify-content: space-between;
+}
+.logo_w_footer {
+    width: 92px;
+    height: 76px;
+    margin-left: 2px;
+}
+.logo_footer {
+    margin-top: 33px;
+}
+.accounts  {
+    margin-right: -4px;
 }
