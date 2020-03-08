@@ -1002,3 +1002,11 @@ input {
 .accounts {
     margin-right: -4px;
 }
+
+
+/* Change result style */
+
+.portfolio {
+    position: relative;
+    margin-top: 10px;
+}
