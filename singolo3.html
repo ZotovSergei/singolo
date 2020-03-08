@@ -20,12 +20,13 @@
                     </p>
                 </div>
                 <section class="layout_2_column">
-                    <form class="feedback_form" action="#" method="post">
+                    <form class="feedback_form" action="#" method="post" id="feedback-form">
                         <input class="input_design" type="text" name ="text" placeholder="Name (Required)" required>
-                        <input class="input_design" type="email" name="e-mail" id="e-mail" placeholder="Email (Required)">
+                        <input class="input_design" type="email" name="e-mail" id="e-mail" placeholder="Email (Required)" required>
                         <input class="input_design" type="text" name="subject" id="subject" placeholder="Subject">
-                        <textarea  class="input_design textarea_design" name="desc" id="desc" cols="30" rows="13x" height='202'placeholder="Describe your project in detail...">                    
-                        </textarea>                    
+                        <textarea  class="input_design textarea_design" name="desc" id="desc" cols="30" placeholder="Describe your project in detail...">                            
+                        </textarea>
+                        <button class="submit_button" type="submit" form="feedback-form" value="Submit">Submit</button>            
                     </form>
     
                     <section class="contact">                    
@@ -53,7 +54,7 @@
 
         <section class="footer">
             <section class="wrapper wrapper-footer">
-                <div class="logo_w_footer"><img class="logo_footer" src="./assets/singolo3/logo_footer.png" alt="logo" srcset=""></div>
+                <div class="logo_w_footer"><span class="logo_footer">© Copyright 2013</span></div>
                 <div class="accounts">
                     <ol class="social">
                         <li class="social_acc"><div class="facebook"></div></li>
