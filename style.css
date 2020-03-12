@@ -24,8 +24,8 @@ body,
 html {
     width: 1020px;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    /* left: 50%;
+    transform: translateX(-50%); */
 }
 
 h1,
@@ -476,12 +476,12 @@ h4 {
 
 body,
 html {
-    margin: 0;
+    margin: 0 auto;
     width: 1020px;
     max-width: 1020px;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    /* left: 50%;
+    transform: translateX(-50%); */
 }
 
 .portfolio {
@@ -730,12 +730,12 @@ html {
 
 body,
 html {
-    margin: 0;
+    margin: 0 auto;
     width: 1020px;
     max-width: 1020px;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
 }
 
 .feedback {
@@ -1009,4 +1009,11 @@ input {
 .portfolio {
     position: relative;
     margin-top: 10px;
+}
+
+
+/* JS */
+
+.active {
+    background: red;
 }
