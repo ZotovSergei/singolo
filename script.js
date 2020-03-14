@@ -11,5 +11,33 @@ ulNavigation.forEach(el => {
     })
 })
 
+
+
 let phoneSlider = document.querySelector("body > main > div")
-document.querySelector("body > main > div > div.main_wrapper > a:nth-child(4) > div")
+const arrow = document.querySelectorAll(".arrow");
+
+arrow.forEach(element => {
+    element.addEventListener('click', (event) => {
+        const layout = document.querySelectorAll(".bg_color");
+        changeBackground(layout);
+    })
+});
+
+const changeBackground = (item) => {
+    // if (item.classList.contains('bg_color_red')) {
+    //     console.log(item)
+    //     item.classList.remove('bg_color_red');
+    //     item.classList.add('bg_color_blue');
+    // } else {
+    //     item.classList.add('bg_color_red');
+    //     item.classList.remove('bg_color_blue');
+    // }
+    item.forEach(element => {
+        if (element.classList.contains('hidden')) {
+            element.classList.remove('hidden');
+        } else {
+            element.classList.add('hidden');
+        }
+    });
+
+}
