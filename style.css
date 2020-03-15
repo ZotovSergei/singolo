@@ -567,6 +567,7 @@ html {
 .btn_navigation .btn_nav_4:hover {
     color: #dedede;
     border: 1px solid #dedede;
+    cursor: pointer;
 }
 
 .btn_nav {
@@ -1237,4 +1238,8 @@ input {
     position: absolute;
     /* right: -1020px;
     left: -1020px; */
+}
+.portfolio_active {
+    background-color: blueviolet;
+    color: white;
 }

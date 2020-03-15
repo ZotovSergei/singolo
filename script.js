@@ -28,7 +28,7 @@ arrowNext.forEach(element => {
 });
 
 const changeBackgroundPrev = () => {
-    const layout = document.querySelectorAll(".bg_color");    
+    const layout = document.querySelectorAll(".bg_color");
     let flag = false;
     let flag_0 = false;
     layout.forEach(item => {
@@ -59,10 +59,7 @@ const changeBackgroundPrev = () => {
 }
 
 const changeBackgroundNext = (item) => {
-    // let tmp = item[1].cloneNode(true);
-    // item[0].before(tmp);
-    // item[item.length - 1].remove();
-    const layout = document.querySelectorAll(".bg_color");    
+    const layout = document.querySelectorAll(".bg_color");
     let flag = false;
     let flag_0 = false;
     layout.forEach(item => {
@@ -113,3 +110,21 @@ buttonPhone.forEach((item, i) => {
         }
     })
 })
+
+//Portfolio
+const portfolioBtnNav = document.querySelector('.btn_navigation');
+portfolioBtnNav.addEventListener('click', (event) => {
+    if (event.target.classList.contains('btn_nav')) {   
+        const btnClicked = document.querySelectorAll('.btn_navigation span');
+        btnClicked.forEach(el => {
+            el.classList.remove('portfolio_active');
+        });
+        event.target.classList.add('portfolio_active')
+        // listClickedLLink.forEach(item => {
+        //     item.classList.remove('active');
+        // })
+        // event.target.classList.add('active');
+        console.log(event.target)
+    }
+})
+
