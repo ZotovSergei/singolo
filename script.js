@@ -11,33 +11,105 @@ ulNavigation.forEach(el => {
     })
 })
 
-
-
 let phoneSlider = document.querySelector("body > main > div")
-const arrow = document.querySelectorAll(".arrow");
-
-arrow.forEach(element => {
+const arrowPrev = document.querySelectorAll(".prev_button");
+const arrowNext = document.querySelectorAll(".next_button");
+arrowPrev.forEach(element => {
     element.addEventListener('click', (event) => {
         const layout = document.querySelectorAll(".bg_color");
-        changeBackground(layout);
+        changeBackgroundPrev();
+    })
+});
+arrowNext.forEach(element => {
+    element.addEventListener('click', (event) => {
+        const layout = document.querySelectorAll(".bg_color");
+        changeBackgroundNext();
     })
 });
 
-const changeBackground = (item) => {
-    // if (item.classList.contains('bg_color_red')) {
-    //     console.log(item)
-    //     item.classList.remove('bg_color_red');
-    //     item.classList.add('bg_color_blue');
-    // } else {
-    //     item.classList.add('bg_color_red');
-    //     item.classList.remove('bg_color_blue');
-    // }
-    item.forEach(element => {
-        if (element.classList.contains('hidden')) {
-            element.classList.remove('hidden');
-        } else {
-            element.classList.add('hidden');
+const changeBackgroundPrev = () => {
+    const layout = document.querySelectorAll(".bg_color");    
+    let flag = false;
+    let flag_0 = false;
+    layout.forEach(item => {
+        if (item.classList.contains('prev_move')) {
+            item.classList.remove('prev_move');
+            item.classList.add('prev_move_0');
+            flag = true;
         }
-    });
-
+        if (item.classList.contains('prev_move_2')) {
+            item.classList.remove('prev_move_2');
+            item.classList.add('prev_move_0')
+            flag = true;
+        }
+        if (item.classList.contains('prev_move_0')) {
+            item.classList.remove('prev_move_0');
+            item.classList.add('prev_move_0');
+            flag_0 = true;
+        }
+    })
+    if (!flag || !flag_0) {
+        layout[2].classList.add('prev_move');
+        layout[1].classList.add('prev_move_2');
+        layout[2].classList.remove('prev_move_0');
+        layout[1].classList.remove('prev_move_0');
+        flag = false;
+        return;
+    }
 }
+
+const changeBackgroundNext = (item) => {
+    // let tmp = item[1].cloneNode(true);
+    // item[0].before(tmp);
+    // item[item.length - 1].remove();
+    const layout = document.querySelectorAll(".bg_color");    
+    let flag = false;
+    let flag_0 = false;
+    layout.forEach(item => {
+        if (item.classList.contains('prev_move')) {
+            item.classList.remove('prev_move');
+            item.classList.add('prev_move_0');
+            flag = true;
+        }
+        if (item.classList.contains('prev_move_2')) {
+            item.classList.remove('prev_move_2');
+            item.classList.add('prev_move_0')
+            flag = true;
+        }
+        if (item.classList.contains('prev_move_0')) {
+            item.classList.remove('prev_move_0');
+            item.classList.add('prev_move_0');
+            flag_0 = true;
+        }
+    })
+    if (!flag || !flag_0) {
+        layout[0].classList.add('prev_move_2');
+        layout[1].classList.add('prev_move');
+        layout[0].classList.remove('prev_move_0');
+        layout[1].classList.remove('prev_move_0');
+        flag = false;
+        return;
+    }
+}
+
+const buttonPhone = document.querySelectorAll('.phone');
+buttonPhone.forEach((item, i) => {
+    item.addEventListener('click', (event) => {
+        if (event.target.classList.contains('btn_phone')) {
+            let parent = event.target.parentElement;
+            while (true) {
+                if (parent.classList.contains('wrapper_phone')) {
+                    parent = parent.querySelector('.screen_layout div');
+                    break;
+                } else {
+                    parent = parent.parentElement;
+                }
+            }
+            if (parent.style.visibility == 'hidden') {
+                parent.style.visibility = 'visible';
+            } else {
+                parent.style.visibility = 'hidden';
+            }
+        }
+    })
+})
