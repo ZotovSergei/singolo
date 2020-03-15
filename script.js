@@ -152,5 +152,12 @@ imgArray.addEventListener('click',(event)=>{
     }
 })
 
+//Get a quote
+
+const subject = document.querySelector('#subject');
+let textSubject = /^Singolo$/.test(subject.value) ? 'Singolo' : 'Без темы';
+const desc = document.querySelector('#desc');
+let textDesc = desc.value.includes('Portfolio project') ? 'Portfolio project' : 'Без описания';
+debugger
 
 
