@@ -130,8 +130,7 @@ const selectedImg = () => {
     var shuffledArr = arr.sort(function(){
         return Math.random() - 0.5;
     });
-    const imgArray = document.querySelectorAll(".image_wrapper .image");
-    
+    const imgArray = document.querySelectorAll(".image_wrapper .image");    
     imgArray.forEach((el, i) => {
         let item = el.querySelector('.prj_image');        
         img[i] = item;
@@ -142,6 +141,16 @@ const selectedImg = () => {
     })    
 }
 
+const imgArray = document.querySelector(".image_wrapper");
+imgArray.addEventListener('click',(event)=>{
+    if (event.target.classList.contains('prj_image')) {
+        const imgArray = document.querySelectorAll(".image_wrapper .image .prj_image");    
+        imgArray.forEach((el, i) => {
+            el.classList.remove('img_active');
+        })
+        event.target.classList.add('img_active');
+    }
+})
 
 
 
