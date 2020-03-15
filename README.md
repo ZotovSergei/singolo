@@ -1,1 +1,1 @@
-# singolo
+[# singolo](https://zotovsergei.github.io/singolo/)
