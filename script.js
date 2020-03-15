@@ -119,12 +119,29 @@ portfolioBtnNav.addEventListener('click', (event) => {
         btnClicked.forEach(el => {
             el.classList.remove('portfolio_active');
         });
-        event.target.classList.add('portfolio_active')
-        // listClickedLLink.forEach(item => {
-        //     item.classList.remove('active');
-        // })
-        // event.target.classList.add('active');
-        console.log(event.target)
+        event.target.classList.add('portfolio_active');
+        selectedImg();    
     }
 })
+
+const selectedImg = () => {
+    let img = {};
+    let arr = [0,1,2,3,4,5,6,7,8,9,10,11];
+    var shuffledArr = arr.sort(function(){
+        return Math.random() - 0.5;
+    });
+    const imgArray = document.querySelectorAll(".image_wrapper .image");
+    
+    imgArray.forEach((el, i) => {
+        let item = el.querySelector('.prj_image');        
+        img[i] = item;
+        item.remove();
+    })
+    imgArray.forEach((el, i) => {
+        el.append(img[shuffledArr[i]]);        
+    })    
+}
+
+
+
 
