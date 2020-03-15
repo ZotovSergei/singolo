@@ -623,6 +623,8 @@ html {
 .prj_image {
     width: 220px;
     height: 187px;
+    cursor: pointer;
+    box-sizing: border-box;
 }
 
 .bottom_line_portfolio {
@@ -1242,4 +1244,7 @@ input {
 .portfolio_active {
     background-color: blueviolet;
     color: white;
+}
+.img_active {
+    border: #F06C64 5px solid;
 }
