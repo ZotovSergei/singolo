@@ -161,19 +161,20 @@ const inDesc = document.querySelector('#result-describe');
 const btnSubmit = document.querySelector('#submit-button');
 const btnClose = document.querySelector('#message-button');
 const modal = document.querySelectorAll('.modal_message');
-document.forms.feedback_form.onsubmit = function () {    
-    return false
-};
-
-btnSubmit.addEventListener('click', (e) => {
+document.forms.feedback_form.onsubmit = function () {  
     document.querySelector('#result-subject').innerText = /^Singolo$/.test(subject.value) ? 'Singolo' : 'Без темы';
     document.querySelector('#result-describe').innerText = desc.value.includes('Portfolio project') ? 'Portfolio project' : 'Без описания';
     // inSubj.innerText(textSubject);
     // inDesc.innerText(textDesc);
     modal.forEach(item => {
         item.classList.remove('hidden__message');
-    })
-})
+    }) 
+    return false
+};
+
+// btnSubmit.addEventListener('click', (e) => {
+  
+// })
 btnClose.addEventListener('click', (e) => {
     modal.forEach(item => {
         item.classList.add('hidden__message');
