@@ -155,9 +155,30 @@ imgArray.addEventListener('click',(event)=>{
 //Get a quote
 
 const subject = document.querySelector('#subject');
-let textSubject = /^Singolo$/.test(subject.value) ? 'Singolo' : 'Без темы';
+const inSubj =  document.querySelector('#result-subject');
 const desc = document.querySelector('#desc');
-let textDesc = desc.value.includes('Portfolio project') ? 'Portfolio project' : 'Без описания';
-debugger
+const inDesc = document.querySelector('#result-describe');
+const btnSubmit = document.querySelector('#submit-button');
+const btnClose = document.querySelector('#message-button');
+const modal = document.querySelectorAll('.modal_message');
+document.forms.feedback_form.onsubmit = function () {    
+    return false
+};
+
+btnSubmit.addEventListener('click', (e) => {
+    document.querySelector('#result-subject').innerText = /^Singolo$/.test(subject.value) ? 'Singolo' : 'Без темы';
+    document.querySelector('#result-describe').innerText = desc.value.includes('Portfolio project') ? 'Portfolio project' : 'Без описания';
+    // inSubj.innerText(textSubject);
+    // inDesc.innerText(textDesc);
+    modal.forEach(item => {
+        item.classList.remove('hidden__message');
+    })
+})
+btnClose.addEventListener('click', (e) => {
+    modal.forEach(item => {
+        item.classList.add('hidden__message');
+    })
+})
+// debugger
 
 

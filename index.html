@@ -576,7 +576,7 @@
                 </p>
             </div>
             <section class="layout_2_column ">
-                <form class="feedback_form " action="# " method="post" id="feedback-form ">
+                <form name="feedback_form" class="feedback_form" action="# " method="post" id="feedback-form">
                     <input class="input_design " type="text " name="text" placeholder="Name (Required) " required>
                     <input class="input_design " type="email " name="e-mail" id="e-mail "
                         placeholder="Email (Required) " required>
@@ -584,7 +584,7 @@
                     <textarea class="input_design textarea_design " name="desc" id="desc" cols="30 "
                         placeholder="Describe your project in detail... ">
                     </textarea>
-                    <button class="submit_button " type="submit" form="feedback-form" value="Submit">Submit</button>
+                    <button id="submit-button" class="submit_button" type="submit" form="feedback-form" value="Submit">Submit</button>
                 </form>
 
                 <section class="contact ">
@@ -600,14 +600,21 @@
                                         href="mailto:info@singolo.com ">info@singolo.com</a></li>
                             </ol>
                         </span>
-                </section>
+                </section>            
             </section>
         </section>
     </section>
 
-    <div class="bg-line-footer ">
+    <section class="modal_message message_block hidden__message" id="message-block">
+        <div class="modal_message message_text hidden__message">
+            <p>Письмо отправлено</p>
+            <p id="subject-message">Тема: <span id="result-subject"></span></p>
+            <p id="describe-message">Описание: <span id="result-describe"></span></p>
+            <button id="message-button">OK</button>
+        </div>
+    </section>
 
-    </div>
+    <div class="bg-line-footer "></div>
 
     <section class="footer ">
         <section class="wrapper wrapper-footer ">
@@ -629,7 +636,7 @@
                 </ol>
             </div>
         </section>
-    </section>
+    </section>    
     <script src="script.js "></script>
 </body>
 
