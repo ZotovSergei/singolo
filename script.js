@@ -1,8 +1,8 @@
 let ulNavigation = document.querySelectorAll("#navigation_ul");
 ulNavigation.forEach(el => {
     el.addEventListener('click', (event) => {
-        if (event.target.classList.contains('a__href')) {
-            let listClickedLLink = document.querySelectorAll("#navigation_ul > li > a");
+        if (event.target.classList.contains('a__href')) {  
+            let listClickedLLink = document.querySelectorAll("#navigation_ul > li > a");            
             listClickedLLink.forEach(item => {
                 item.classList.remove('active');
             })
@@ -176,6 +176,7 @@ document.forms.feedback_form.onsubmit = function () {
   
 // })
 btnClose.addEventListener('click', (e) => {
+    document.forms.feedback_form.reset();
     modal.forEach(item => {
         item.classList.add('hidden__message');
     })
