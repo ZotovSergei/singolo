@@ -24,6 +24,7 @@ body,
 html {
     width: 1020px;
     position: relative;
+    scroll-behavior: smooth;
     /* left: 50%;
     transform: translateX(-50%); */
 }
@@ -1068,20 +1069,20 @@ input {
 
 .prev_move {
     transform: translateX(-1020px);
-    transition-duration: 2s;
+    transition-duration: 1s;
     /* z-index:6; */
 }
 .prev_move_2 {
     transform: translateX(1020px);
-    transition-duration: 2s;
+    transition-duration: 1s;
 }
 .prev_move_0 {
     transform: translateX(0px);
-    transition-duration: 2s;
+    transition-duration: 1s;
 }
 .next_move {
     transform: translateX(0px);
-    transition-duration: 3s;
+    transition-duration: 2s;
 }
 
 .hidden {
