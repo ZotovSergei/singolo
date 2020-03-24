@@ -61,9 +61,12 @@ h1 {
 .header__wrapper {
     width: 100%;
     max-width: 940px;
+    margin-top: 10px;
     /* padding-top: 5px; */
     display: flex;
     justify-content: space-between;
+    /* margin-left: 40px; */
+    /* margin-right: 40px; */
     /* position: absolute; */
     /* left: 50%; */
     /* top: 50%; */
@@ -116,13 +119,19 @@ h1 {
     display: flex;
     position: relative;
     overflow: hidden;
+    justify-content: center;
     padding-top: 89px;
+    height: 600px;
 }
 
 .bg_color {
-    width: 1020px;
+    width: 100%;
+    max-width: 1020px;
     height: 600px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bg_color_red {
@@ -130,10 +139,12 @@ h1 {
 }
 
 .main_wrapper {
-    width: 1020px;
-    left: 50%;
+    width: 100%;
+    /* max-width: 1020px; */
+    /* max-width: 940px; */
+    /* left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     position: relative;
     display: flex;
     justify-content: space-evenly;
@@ -146,6 +157,7 @@ h1 {
     justify-content: space-between;
     width: 100%;
     height: 600px;
+    max-width: 940px;
     align-items: center;    
 }
 
@@ -166,12 +178,12 @@ h1 {
 
 .wrapper_prev_button {
     z-index: 12;
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 .wrapper_next_button {
     z-index: 12;
-    margin-right: 40px;
+    /* margin-right: 40px; */
 }
 
 .prev_button {
@@ -185,16 +197,21 @@ h1 {
 }
 
 .phone {
-    width: 215px;
-    height: 458px;
+    /* width: 215px; */
+    /* height: 458px; */
     position: relative;
     bottom: 19px;
 }
 
 .wrapper_phone {
     border-radius: 28px;
-    width: 215px;
-    height: 458px;
+    /* width: 215px;
+    height: 458px; */
+    max-width: 215px;
+    max-height: 458px;
+    width: 17vw;
+    height: 48vh;
+
     background-color: #f2f2f2;
     position: relative;
     z-index: 10;
@@ -263,8 +280,11 @@ h1 {
 }
 
 .screen_layout {
-    width: 188px;
-    height: 333px;
+    /* width: 188px;
+    height: 333px; */
+    width: 88%;
+    height: 73%;
+
     background-color: black;
     border: 2px solid #c6c6c6;
     top: 12px;
@@ -357,7 +377,8 @@ h1 {
 }
 
 .service_wrapper {
-    width: 940px;
+    max-width: 940px;
+    width: 100%;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -1021,21 +1042,21 @@ input {
 
 .bg_color_blue {
     background-color: #648BF0;
-    width: 1020px;
+    /* width: 1020px; */
 }
 
 .prev_move {
     transform: translateX(-1020px);
-    transition-duration: 1s;
+    transition-duration: 1s;        
     /* z-index:6; */
 }
 .prev_move_2 {
     transform: translateX(1020px);
-    transition-duration: 1s;
+    transition-duration: 1s;    
 }
 .prev_move_0 {
     transform: translateX(0px);
-    transition-duration: 1s;
+    transition-duration: 1s;    
 }
 .next_move {
     transform: translateX(0px);
@@ -1136,8 +1157,10 @@ input {
 
 .slides {
     display: flex;
-    width: 1020px;
-    height: 600px;
+    /* width: 1020px; */
+    width: 100%;
+    /* height: 600px; */
+    height: 100%;
     flex-wrap: nowrap;
     /* transform: translateX(-1020px); */
     position: relative;
@@ -1192,4 +1215,26 @@ input {
     background-color: wheat;
     width: 300px;
     height: 150px;
+}
+@media screen and (max-width: 768px) {
+    body {
+        max-width: 768px;
+    }
+    .header {
+        max-width: 768px;
+    }
+    .main,.bg_color {
+        height: 447px;
+    }
+    /* Servives - block */
+    .wrapper_support {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .wrapper {
+        width: 687px;
+    }
+    .service {
+        height: 674px;
+    }
 }
