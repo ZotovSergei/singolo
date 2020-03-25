@@ -156,7 +156,9 @@ h1 {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 600px;
+    /* height: 600px;*/
+    height: 100%;
+    max-height: 600px;
     max-width: 940px;
     align-items: center;    
 }
@@ -205,12 +207,12 @@ h1 {
 
 .wrapper_phone {
     border-radius: 28px;
-    /* width: 215px;
-    height: 458px; */
+    width: 215px;
+    height: 458px;
     max-width: 215px;
     max-height: 458px;
-    width: 17vw;
-    height: 48vh;
+    /* width: 17vw;
+    height: 48vh; */
 
     background-color: #f2f2f2;
     position: relative;
@@ -273,7 +275,8 @@ h1 {
 }
 
 .speaker_phone {
-    width: 36px;
+    /* width: 36px; */
+    width: 365%;
     height: 5px;
     background-color: #acacac;
     border-radius: 3px;
@@ -313,13 +316,13 @@ h1 {
     top: 20px;
 }
 
-.v_home_button {
+/* .v_home_button {
     top: 20px;
-}
+} */
 
-.h_home_button {
+/* .h_home_button {
     top: 18px
-}
+} */
 
 .home_button_outer_circle {
     width: 43px;
@@ -329,8 +332,10 @@ h1 {
 }
 
 .home_button_inner_circle {
-    width: 15px;
-    height: 15px;
+    /* width: 15px;
+    height: 15px; */
+    width: 40%;
+    height: 40%;
     border: 2px solid #c2c2c2;
     position: absolute;
     left: 50%;
@@ -1234,8 +1239,51 @@ input {
     .header {
         max-width: 768px;
     }
+    .arrow_button_slider {
+        width: 687px;
+        height: 447px;
+    }
     .main,.bg_color {
         height: 447px;
+    }
+    .head_phone {
+        height: 22px;
+        top: 0;
+    }
+    .outer_circle_cam {
+        width: 8px;
+        height: 8px;
+    }
+    .wrapper_phone {
+        width: 164px;
+        height: 344px;
+        border-radius: 18px;
+    }
+    .v_screen_layout {
+        background: url('./assets/768_tablet_images/phone-vertical-display.png')
+    }
+    .v_shadow {
+        width: 180px;
+        height: 363px;
+        background: url('./assets/768_tablet_images/phone-vertical-shadow.png');
+    }
+    .h_screen_layout {
+        left: -97px;
+        background: url('./assets/768_tablet_images/phone-horizontal-display.png') center no-repeat;
+    }
+    .h_shadow {
+        width: 363px;
+        height: 180px;
+        top: 73px;
+        left: -91px;
+        background: url('./assets/768_tablet_images/phone-horizontal-shadow.png') center no-repeat;
+    }
+    .home_button_outer_circle {
+        width: 29px;
+        height: 29px;
+    }
+    .home_button {
+        top: 14px;
     }
     /* Servives - block */
     .wrapper_support {
