@@ -507,7 +507,9 @@ h4 {
 
 .item_service {
     text-align: justify;
-    width: 300px;
+    /* width: 300px; */
+    max-width: 300px;
+    width: 100%;
     display: flex;
     line-height: 19px;
     overflow: hidden;
@@ -523,10 +525,14 @@ h4 {
     justify-content: center;
 }
 .portfolio__wrapper {
-    width: 940px;
+    /* width: 940px; */
+    max-width: 940px;
+    width: 100%;
 }
 .aboutUs__header__wrap {
-    width: 939px;
+    /* width: 939px; */
+    max-width: 939px;
+    width: 100%;
     left: 50%;
     transform: translate(-50%);
     position: absolute;
@@ -783,7 +789,9 @@ h4 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 940px;
+    /* width: 940px; */
+    width: 100%;
+    max-width: 940px;
 }
 
 .f_header {
@@ -811,7 +819,8 @@ h4 {
 
 .layout_2_column {
     display: grid;
-    grid-template-columns: 66% 34%;
+    /* grid-template-columns: 66% 34%; */
+    grid-template-columns: 2fr 1fr;
     column-gap: 20px;
 }
 
@@ -1013,7 +1022,8 @@ input {
 
 .wrapper-footer {
     display: flex;
-    width: 940px;
+    max-width: 940px;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -1053,6 +1063,8 @@ input {
 .blue_main_wrapper {
     justify-content: center;
     width: 1020px;
+    /* max-width: 1020px; */
+    /* width: 100%; */
     z-index: 4;
 }
 
@@ -1236,9 +1248,14 @@ input {
     width: 300px;
     height: 150px;
 }
-
-
-@media screen and (max-width: 768px) {
+.wrapper {
+    width: 100%;
+}
+.gamburger {
+    display: none;
+    width: ;
+}
+@media screen and (min-width: 768px) and (max-width:1020px){
     body {
         max-width: 768px;
     }
@@ -1298,7 +1315,8 @@ input {
         grid-template-columns: 1fr 1fr;
     }
     .wrapper {
-        width: 687px;
+        max-width: 687px;
+        width: 100%;
     }
     .service {
         height: 674px;
@@ -1330,7 +1348,79 @@ input {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .head_phone {
+        height: 7px;
+        top: 0;
+    }
+    .outer_circle_cam {
+        width: 4px;
+        height: 4px;
+    }
+    .inner_circle_cam {
+        width: 2px;
+        height: 2px;
+    }
+    .speaker_phone {
+        height: 2px;
+    }
+    .screen_layout {
+        top: 6px;
+        border: 1px solid #c6c6c6;
+    }
+    .wrapper_phone {
+        width: 79px;
+        height: 168px;
+        border-radius: 10px;
+    }
+    .v_screen_layout {
+        background: url('./assets/375_phone_images/phone-vertical-display.png')
+    }
+    .h_screen_layout {
+        width: 114px;
+        left: -22px;
+        background: url('./assets/375_phone_images/phone-horizontal-display.png') center no-repeat;
+    }
+    .v_shadow {
+        width: 88px;
+        height: 177px;
+        background: url('./assets/375_phone_images/phone-vertical-shadow.png');
+    }
+    .h_shadow {
+        width: 177px;
+        height: 88px;
+        top: 36px;
+        left: -46px;
+        background: url('./assets/375_phone_images/phone-horizontal-shadow.png') center no-repeat;
+    }
+    .home_button_outer_circle {
+        width: 14px;
+        height: 14px;
+    }
+    .home_button_inner_circle {
+        border: 1px solid #c2c2c2;
+        width: 6px;
+        height: 6px;
+        border-radius: 2px;
+    }
+    .home_button {
+        top: 8px;
+    }
+    .phone {
+        bottom: 0;
+    }
+    .v_phone {
+        right: 35px;
+    }
+    .h_phone {
+        right: 15px;
+    }
+
+
+
+
+
+
     body {
         max-width: 375px;
     }
@@ -1347,10 +1437,11 @@ input {
         height: 227px;
     }
     .wrapper {
-        width: 314px;
+        max-width: 314px;
+        width: 100%;
     }
     .arrow_button_slider {
-        width: 314px;
+        width: 96%;
         height: 227px;
     }
     /* Servives - block */
