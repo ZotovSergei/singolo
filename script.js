@@ -1,8 +1,8 @@
 let ulNavigation = document.querySelectorAll("#navigation_ul");
 ulNavigation.forEach(el => {
     el.addEventListener('click', (event) => {
-        if (event.target.classList.contains('a__href')) {  
-            let listClickedLLink = document.querySelectorAll("#navigation_ul > li > a");            
+        if (event.target.classList.contains('a__href')) {
+            let listClickedLLink = document.querySelectorAll("#navigation_ul > li > a");
             listClickedLLink.forEach(item => {
                 item.classList.remove('active');
             })
@@ -114,37 +114,37 @@ buttonPhone.forEach((item, i) => {
 //Portfolio
 const portfolioBtnNav = document.querySelector('.btn_navigation');
 portfolioBtnNav.addEventListener('click', (event) => {
-    if (event.target.classList.contains('btn_nav')) {   
+    if (event.target.classList.contains('btn_nav')) {
         const btnClicked = document.querySelectorAll('.btn_navigation span');
         btnClicked.forEach(el => {
             el.classList.remove('portfolio_active');
         });
         event.target.classList.add('portfolio_active');
-        selectedImg();    
+        selectedImg();
     }
 })
 
 const selectedImg = () => {
     let img = {};
-    let arr = [0,1,2,3,4,5,6,7,8,9,10,11];
-    var shuffledArr = arr.sort(function(){
+    let arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+    var shuffledArr = arr.sort(function () {
         return Math.random() - 0.5;
     });
-    const imgArray = document.querySelectorAll(".image_wrapper .image");    
+    const imgArray = document.querySelectorAll(".image_wrapper .image");
     imgArray.forEach((el, i) => {
-        let item = el.querySelector('.prj_image');        
+        let item = el.querySelector('.prj_image');
         img[i] = item;
         item.remove();
     })
     imgArray.forEach((el, i) => {
-        el.append(img[shuffledArr[i]]);        
-    })    
+        el.append(img[shuffledArr[i]]);
+    })
 }
 
 const imgArray = document.querySelector(".image_wrapper");
-imgArray.addEventListener('click',(event)=>{
+imgArray.addEventListener('click', (event) => {
     if (event.target.classList.contains('prj_image')) {
-        const imgArray = document.querySelectorAll(".image_wrapper .image .prj_image");    
+        const imgArray = document.querySelectorAll(".image_wrapper .image .prj_image");
         imgArray.forEach((el, i) => {
             el.classList.remove('img_active');
         })
@@ -155,25 +155,25 @@ imgArray.addEventListener('click',(event)=>{
 //Get a quote
 
 const subject = document.querySelector('#subject');
-const inSubj =  document.querySelector('#result-subject');
+const inSubj = document.querySelector('#result-subject');
 const desc = document.querySelector('#desc');
 const inDesc = document.querySelector('#result-describe');
 const btnSubmit = document.querySelector('#submit-button');
 const btnClose = document.querySelector('#message-button');
 const modal = document.querySelectorAll('.modal_message');
-document.forms.feedback_form.onsubmit = function () {  
+document.forms.feedback_form.onsubmit = function () {
     document.querySelector('#result-subject').innerText = /^Singolo$/.test(subject.value) ? 'Singolo' : 'Без темы';
     document.querySelector('#result-describe').innerText = desc.value.includes('Portfolio project') ? 'Portfolio project' : 'Без описания';
     // inSubj.innerText(textSubject);
     // inDesc.innerText(textDesc);
     modal.forEach(item => {
         item.classList.remove('hidden__message');
-    }) 
+    })
     return false
 };
 
 // btnSubmit.addEventListener('click', (e) => {
-  
+
 // })
 btnClose.addEventListener('click', (e) => {
     document.forms.feedback_form.reset();
@@ -183,4 +183,11 @@ btnClose.addEventListener('click', (e) => {
 })
 // debugger
 
-
+const modalPanel = document.querySelector('.line_block');
+modalPanel.addEventListener('click', (event) => {        
+        if (modalPanel.classList.contains('line_block_rotate')) {
+            modalPanel.classList.remove('line_block_rotate');             
+        } else {
+            modalPanel.classList.add('line_block_rotate');        
+        }
+});
