@@ -183,11 +183,34 @@ btnClose.addEventListener('click', (e) => {
 })
 // debugger
 
-const modalPanel = document.querySelector('.line_block');
-modalPanel.addEventListener('click', (event) => {        
-        if (modalPanel.classList.contains('line_block_rotate')) {
-            modalPanel.classList.remove('line_block_rotate');             
+const burger = document.querySelector('.line_block');
+const modalPanel = document.querySelector('.modal_panel');
+const gamburger = document.querySelector('.gamburger');
+const header = document.querySelector('.h1');
+burger.addEventListener('click', (event) => {        
+        if (burger.classList.contains('line_block_rotate')) {
+            if (modalPanel.classList.contains('active_modal_panel')) {
+                modalPanel.classList.add('not_active_modal_panel');
+                modalPanel.classList.remove('active_modal_panel');                       
+            } else {
+                modalPanel.classList.add('active_modal_panel');
+                gamburger.style.width = '67px';
+                header.style.zIndex = '20'
+                modalPanel.classList.remove('not_active_modal_panel');
+            }
+            burger.classList.remove('line_block_rotate');             
         } else {
-            modalPanel.classList.add('line_block_rotate');        
+            burger.classList.add('line_block_rotate');
+            if (modalPanel.classList.contains('active_modal_panel')) {
+                modalPanel.classList.add('not_active_modal_panel');
+                modalPanel.classList.remove('active_modal_panel');
+                header.style.zIndex = '1'
+                gamburger.style.width = '116px';
+            } else {
+                modalPanel.classList.add('active_modal_panel');
+                gamburger.style.width = '67px';
+                header.style.zIndex = '20'
+                modalPanel.classList.remove('not_active_modal_panel');
+            }     
         }
 });
