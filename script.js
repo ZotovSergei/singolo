@@ -191,7 +191,9 @@ burger.addEventListener('click', (event) => {
         if (burger.classList.contains('line_block_rotate')) {
             if (modalPanel.classList.contains('active_modal_panel')) {
                 modalPanel.classList.add('not_active_modal_panel');
-                modalPanel.classList.remove('active_modal_panel');                       
+                modalPanel.classList.remove('active_modal_panel'); 
+                header.style.zIndex = '1'
+                gamburger.style.width = '116px';                   
             } else {
                 modalPanel.classList.add('active_modal_panel');
                 gamburger.style.width = '67px';

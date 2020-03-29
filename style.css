@@ -1106,8 +1106,8 @@ input {
 }
 
 .small_phone_left {
-    height: 298px;
-    width: 140px;
+    /* height: 298px;
+    width: 140px; */
     right: 0;
     z-index: 1;
 }
@@ -1126,10 +1126,10 @@ input {
     height: 16px;
 }
 
-.small_screen {
+/* .small_screen {
     height: 216px;
     width: 122px;
-}
+} */
 
 .small_screen_layout {
     background-image: url('./assets/image_small_phone/phone-vertical-display.png');
@@ -1395,6 +1395,29 @@ input {
     .textarea_design {
         height: 154px;
     }
+
+
+    /* small_phone */
+    /* .small_phone_left {
+        width: 114px;
+        height: 240px;
+    } */
+    .small_wrapper_pnone {
+        transform: scale(0.7);
+        /* width: 114px;
+        height: 240px; */
+    }
+    .small_shadow {
+        transform: scale(0.7);
+    }
+    .large_phone_center {
+        margin-left: -24px;
+        margin-right: -24px;
+    }
+    .large_screen_layout {
+        background-image: url('./assets/image_large_phone/phone-vertical-display.png');
+        background-size: 145px;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -1426,8 +1449,8 @@ input {
         background: url('./assets/375_phone_images/phone-vertical-display.png')
     }
     .h_screen_layout {
-        width: 114px;
-        left: -22px;
+        width: 126px;
+        left: -29px;
         background: url('./assets/375_phone_images/phone-horizontal-display.png') center no-repeat;
     }
     .v_shadow {
@@ -1509,7 +1532,7 @@ input {
         height: 811px;
     }
     .image  {
-        width: 151px;
+        width: 148px;
         height: 128px;
     }
     .portfolio {
@@ -1598,5 +1621,19 @@ input {
         list-style: none;        
         /* justify-content: space-between; */
         padding: 16px 0px 16px 40px;
+    }
+
+    /* Blue Phone */
+    .large_phone_center {
+        margin-left: -12px;
+        margin-right: -12px;
+        right: 0;
+    }
+    .small_phone_left {
+        right: 0;
+    }
+    .large_screen_layout {
+        background-image: url(./assets/image_large_phone/phone-vertical-display.png);
+        background-size: 75px;
     }
 }
